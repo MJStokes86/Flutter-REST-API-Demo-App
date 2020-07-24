@@ -6,7 +6,7 @@ import 'package:http/http.dart' as http;
 
 class NotesService {
   static const API = 'http://api.notes.programmingaddict.com';
-  static const headers = {'apiKey': '9e3d2b56-a58c-4f2f-a947-785adeeedfd8'};
+  static const headers = // API KEY //;
 
   Future<APIResponse<List<NoteForListing>>> getNotesList() {
     return http.get(API + '/notes', headers: headers).then((data) {
